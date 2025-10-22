@@ -41,7 +41,7 @@ const bases: Ref<BaseBeverageType[]> = ref([
 const creamers: Ref<CreamerType[]> = ref([
   {
     id: "c1",
-    name: "No Cream",
+    name: "No Creamer",
     color: "transparent",
   },
   {

@@ -1,8 +1,18 @@
 <template>
-  <div class="syrup"></div>
+  <div 
+    class="syrup"
+    :style="{ backgroundColor: syrup.color }"
+  ></div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { SyrupType } from "../stores/beverage";
+
+type Props = {
+  syrup: SyrupType;
+};
+defineProps<Props>();
+</script>
 <style lang="scss" scoped>
 .syrup {
   transform: translateY(400%);
